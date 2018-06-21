@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue sandbox</title>
+</head>
+
+<body>
+<div id="app">
+    <h1>{{ title }} {{ counter }}</h1>
+    <button v-on:click="counter++">counter++</button>
+    <app v-bind:title="title" v-on:this-is-test="counter++"></app>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
